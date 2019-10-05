@@ -1,0 +1,193 @@
+*{
+  ont-family: Open Sans;
+}
+.sm-brand{
+  font-size: 30px;
+  color: #FE6003 !important;
+}
+
+.sm-color-black{
+  background-color: #313336;
+}
+
+/* button */
+.sm-btn-orange{
+  background-color: #FE6003;
+}
+
+.bg-img{
+  background-image: url('../../images/banner/bg1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100vw;
+}
+
+.banner-description{
+  height: 90vh;
+  padding-top: 10%;
+  max-width: 60%;
+  font-weight: bold;
+}
+
+
+/* nav bar custom css bootstrap */
+.active a{
+  color: #FE6003 !important;
+}
+
+.navbar-nav .nav-item .nav-link{
+  color: white;
+}
+
+
+body {
+  background: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+ /*mobile*/
+ @media (min-width: 576px) { 
+  .form{
+  background-color: white;
+  box-shadow: 2px 4px 10px  #d4d4d5;
+  border-radius: 7px;
+  width: 55%;
+  height: 100%;
+  margin-left: 20%;
+  }
+
+  .jumbotron{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../../images/banner/jumbotron-bg.jpg');
+  background-size: cover;
+  text-align: center;
+  height: 1000px;
+  text-shadow: 1px 1px 1px rgba(0, 0 , 0, 0.9);
+}
+
+
+}
+
+/*form login*/
+.form-control[type="text"]:focus{
+  box-shadow: none;
+}
+.form-control[type="password"]:focus{
+  box-shadow: none;
+}
+
+.form-control{
+  border-style: none;
+  border-bottom: 2px solid #adadad;
+  margin-left: 20%;
+  width: 180%;
+
+}
+
+.title{
+  padding-left: 22%;
+  padding-top: 10%;
+}
+
+.form{
+  background-color: white;
+  box-shadow: 2px 4px 10px  #d4d4d5;
+  border-radius: 5px;
+  width: 55%;
+  height: 100%;
+  margin-left: 20%;
+
+}
+
+.icon {
+  position: absolute;
+  left: 250px;
+}
+
+/*kelebihan*/
+
+.jumbotron{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../../images/banner/jumbotron-bg.jpg');
+  background-size: cover;
+  text-align: center;
+  height: 500px;
+  text-shadow: 1px 1px 1px rgba(0, 0 , 0, 0.9);
+  
+}
+.keterangan{
+  color: white;
+}
+
+
+i{
+  background-color: white;
+  border-radius: 50%;
+  border: 1x solid grey;
+  padding: 10px;
+  color: black;
+}
+
+.cooperation{
+  background-color: white;
+  text-align: center;
+  margin-top: -150px;
+  box-shadow: 0 3px 12px;
+  border-radius: 17px;
+}
+
+.imagee img{
+  width: 70px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+nav-link:hover {
+  background-color: #FE6003;
+  color: black;
+}
+
+.imagee{
+  word-spacing: 10px;
+}
+.previous {
+  background-color: #474646;
+  color: white;
+  margin-right: 15px;
+}
+
+.next {
+  background-color: #474646;
+  color: white;
+  margin-left: 15px;
+}
+
+.round {
+  border-radius: 10px;
+  
+}
+
+/*card*/
+.card{
+ margin-top: -100px;
+ box-shadow: 2px 4px 10px ;
+ border-radius: 10px;
+}
+
+.card-body h3{
+  text-align: center;
+  color: #FE6003;
+}
+
+/*footer*/
+.footer{
+  background: #313336;
+}
+
+.footer h3{
+  color: #fff;
+  font-size: 20px;
+}

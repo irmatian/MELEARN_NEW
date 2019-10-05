@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/smartedu/css/smartedu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+  <link href='./assets/fullcalender/packages/core/main.css' rel='stylesheet' />
+  <link href='./assets/fullcalender/packages/daygrid/main.css' rel='stylesheet' />
+  <script src='./assets/fullcalender/packages/core/main.js'></script>
+  <script src='./assets/fullcalender/packages/interaction/main.js'></script>
+  <script src='./assets/fullcalender/packages/daygrid/main.js'></script>
+  <!-- awesome -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style media="screen">
+  html {
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  .card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 2px 4px 15px  #d4d4d5;
+  }
+
+  .card-title {
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+  }
+
+  /*Table*/
+  
+  
+</style>
+
+<body>
+
+  <section id="sidebars">
+    <!-- Vertical navbar -->
+    <div class="vertical-nav bg-dark" id="sidebar" style="z-index:2">
+      <div class="py-4 px-3 mb-4 sm-color-black">
+        <div class="media d-flex align-items-center"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+          <div class="media-body">
+            <h4 class="m-0 text-light">Jason Doe</h4>
+            <p class="font-weight-light text-muted mb-0">Web developer</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+
+      <ul class="nav flex-column sm-color-black mb-0">
+        <li class="nav-item active">
+          <a href="#" class="nav-link text-light font-italic sm-color-black">
+            <i class="fas fa-th-large mr-3"></i>
+            Dashboard
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-light font-italic sm-color-black">
+            <i class="fas fa-book"></i>
+            Materi
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-light font-italic sm-color-black">
+            <i class="fas fa-th-large mr-3"></i>
+            Soal
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-light font-italic sm-color-black">
+            <i class="fas fa-th-large mr-3"></i>
+            Kelas
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-light font-italic sm-color-black">
+            <i class="fas fa-th-large mr-3"></i>
+            Group Diskusi
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-light font-italic sm-color-black">
+            <i class="fas fa-th-large mr-3"></i>
+            Laporan
+          </a>
+        </li>
+
+
+      </ul>
+
+      <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
+
+      <ul class="nav flex-column sm-color-black mb-0">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-light font-italic">
+            <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
+            Area charts
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-light font-italic">
+            <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
+            Bar charts
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-light font-italic">
+            <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
+            Pie charts
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-light font-italic">
+            <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
+            Line charts
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End vertical navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sm-color-orange shadow p-3 mb-5 sticky-top" style="z-index:1">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#"><i class="far fa-bell"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page content holder -->
+    <div class="page-content p-5" id="content">
+      <div class="col-md-12">
+        <h4 style="margin-top: -60px;">Laporan Ujian Matematika</h4>
+        <div class="date">Tanggal ujian : Senin, 11 juli 2019
+        <i class="fa fa-print" style="font-size:36px; float: right; padding-top: -2px;"></i>
+        </div><br><br>
+        <div class="card">
+          <div class="card-body">
+            <form class="" action="index.html" method="post">
+                <div class="table-responsive-sm">
+                  <table class="table">
+                    <thead>
+                      <tr style="background-color: #FE6003;">
+                        <th scope="col">No</th>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Materi</th>
+                        <th scope="col">Presensi</th>
+                        <th scope="col">Peingkat</th>
+                        <th scope="col">Nilai</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><img class="rounded-circle" src="assets/images/banner/box-1.JPG" style="width: 40px;"> Rizal Nasution</td>
+                        <td>Aljabar Linier</td>
+                        <td>12A</td>
+                        <td>5</td>
+                        <td>90</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td><img class="rounded-circle" src="assets/images/banner/box-1.JPG" style="width: 40px;"> Rizal Nasution</td>
+                        <td>Aljabar Linier</td>
+                        <td>12A</td>
+                        <td>5</td>
+                        <td>90</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td><img class="rounded-circle" src="assets/images/banner/box-1.JPG" style="width: 40px;"> Rizal Nasution</td>
+                        <td>Aljabar Linier</td>
+                        <td>12A</td>
+                        <td>5</td>
+                        <td>90</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td><img class="rounded-circle" src="assets/images/banner/box-1.JPG" style="width: 40px;"> Rizal Nasution</td>
+                        <td>Aljabar Linier</td>
+                        <td>12A</td>
+                        <td>5</td>
+                        <td>90</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td><img class="rounded-circle" src="assets/images/banner/box-1.JPG" style="width: 40px;"> Rizal Nasution</td>
+                        <td>Aljabar Linier</td>
+                        <td>12A</td>
+                        <td>5</td>
+                        <td>90</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td><img class="rounded-circle" src="assets/images/banner/box-1.JPG" style="width: 40px;"> Rizal Nasution</td>
+                        <td>Aljabar Linier</td>
+                        <td>12A</td>
+                        <td>5</td>
+                        <td>90</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td><img class="rounded-circle" src="assets/images/banner/box-1.JPG" style="width: 40px;"> Rizal Nasution</td>
+                        <td>Aljabar Linier</td>
+                        <td>12A</td>
+                        <td>5</td>
+                        <td>90</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td><img class="rounded-circle" src="assets/images/banner/box-1.JPG" style="width: 40px;"> Rizal Nasution</td>
+                        <td>Aljabar Linier</td>
+                        <td>12A</td>
+                        <td>5</td>
+                        <td>90</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" charset="utf-8"></script>
+<script src="./assets/bootstrap/js/bootstrap.bundle.js" charset="utf-8"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" charset="utf-8"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js" charset="utf-8"></script>
+<script src="./assets/smartedu/js/main.js" charset="utf-8"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: ['interaction', 'dayGrid'],
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: [{
+        title: 'All Day Event',
+        start: '2019-07-02'
+      }, ]
+    });
+
+    calendar.render();
+  });
+</script>
+
+</html>
